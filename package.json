@@ -1,0 +1,35 @@
+{
+  "name": "pmms-retrysendingemailservice",
+  "version": "1.0.0",
+  "description": "Repository responsible for managing the forwarding of failed messages from the PMMS platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcabreram1234/PMMS-retrySendingEmailService.git"
+  },
+  "keywords": [
+    "PMMS",
+    "Email",
+    "Sending",
+    "Service",
+    "SAAS"
+  ],
+  "author": "Phillip Cabrera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pcabreram1234/PMMS-retrySendingEmailService/issues"
+  },
+  "homepage": "https://github.com/pcabreram1234/PMMS-retrySendingEmailService#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "mysql2": "^3.16.1",
+    "nodemailer": "^7.0.12",
+    "nodemon": "^3.1.11",
+    "sequelize": "^6.37.7"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatic Mail</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #1155cc;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .content {
+        padding: 20px;
+      }
+      .content p {
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.5;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #666666;
+        background-color: #eeeeee;
+      }
+      .button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #1155cc;
+        color: white !important;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Header del correo -->
+      <div class="header">
+        <h1>PMMS - Pocho`s Messages Managment System</h1>
+      </div>
+
+      <!-- Contenido del correo -->
+      <div class="content">
+        <p>Hi,</p>
+
+        <p>
+          This is an automatic message sent through the email management
+          platform. Below you will find the content of the scheduled message:
+        </p>
+
+        <!-- Aquí se insertará el mensaje programado por el usuario -->
+        <p
+          style="
+            font-size: 15px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-left: 5px solid #1155cc;
+          "
+        >
+          {{MENSAJE_PROGRAMADO}}
+        </p>
+
+        <p>Thank you for using our service.</p>
+
+        <a href="https://pmms-landing.netlify.app/" class="button" target="_blank">
+          Visit our Platform
+        </a>
+      </div>
+
+      <!-- Footer del correo -->
+      <div class="footer">
+        © 2024 Message Management Pocho. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
