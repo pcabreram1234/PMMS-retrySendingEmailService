@@ -71,6 +71,7 @@ const retryEmailSending = async () => {
     console.log("Esperando 10 segundos");
     await delay(10000);
   }
+  console.log("Proceso terminado");
 };
 
 module.exports = { retryEmailSending };
